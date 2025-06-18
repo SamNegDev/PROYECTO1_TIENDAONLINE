@@ -29,7 +29,6 @@ header {
 
 .logo {
     height: 150px;
-    justify-self: right;
 }
 
 .icon {
@@ -96,7 +95,7 @@ header {
 
 #hero>h2 {
     color: white;
-    font-size: 70px;
+    font-size: 55px;
     text-align: center;
     margin-left: 70%;
     margin-right: 40px;
@@ -238,4 +237,122 @@ li:hover .funko_name {
 #shop_terms>ul>li>img {
     height: 70px;
     width: auto;
+}
+
+/* AJUSTE SHOP TERMS */
+@media screen and (max-width: 1235px) {
+    #shop_terms {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #E61E82;
+        height: 290px;
+    }
+
+    #shop_terms>ul>li {
+        width: 250px;
+        height: 240px;
+        gap: 25px;
+    }
+
+    /* TABLET */
+    @media screen and (max-width: 1024px) {
+        #navbar {
+            font-size: 16px;
+            gap: 20px;
+        }
+
+        #hero>h2 {
+            font-size: 50px;
+            margin-left: 50%;
+        }
+
+        .funko_name {
+            font-size: 14px;
+        }
+
+        #shop_terms {
+            background-color: white;
+            width: 100%;
+        }
+
+        #shop_terms ul {
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+            align-items: center;
+
+        }
+
+        #shop_terms>ul>li {
+            width: 90%;
+        }
+    }
+
+    /* MÓVIL */
+    @media screen and (max-width: 768px) {
+        header {
+            height: 280px;
+        }
+
+        #navbar {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            background-color: var(--primary-background-color);
+            width: 100%;
+        }
+
+        #socialLanguage {
+            margin-top: 50px;
+            width: 90%;
+        }
+
+        #userMenu {
+            grid-template-columns: 1fr;
+            gap: 10px;
+            width: 90%;
+        }
+
+        #logo {
+            height: 50px;
+        }
+
+        #hero {
+            height: 450px;
+            width: 100%;
+            background-image: url(./assets/IMG_HERO_MOVIL.jpg);
+        }
+
+
+        #hero>h2 {
+            font-size: 32px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .funko_name {
+            font-size: 13px;
+        }
+
+        #shop_terms {
+            background-color: white;
+            width: 100%;
+        }
+
+        #shop_terms ul {
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+            align-items: center;
+
+        }
+
+        #shop_terms>ul>li {
+            width: 90%;
+        }
+    }
 }
